@@ -9,3 +9,8 @@
     @apply font-comfortaa;
   }
 }
+
+.pdf-dimensions {
+  width: 60%;
+  height: calc(100vh - 180px);
+}

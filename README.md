@@ -47,5 +47,3 @@ For additional questions, please contact me at ddren024@gmail.com.
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
-
-# Module-12-Challenge
