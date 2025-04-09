@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 
 function Contact() {
@@ -14,6 +15,12 @@ function Contact() {
     ? (setError("All fields are required."), setSubmission(""))
     : (
       setError(""),
+      emailjs.sendForm(
+        import.meta.env.VITE_SERVICE_ID, 
+        import.meta.env.VITE_TEMPLATE_ID, 
+        e.target, 
+        import.meta.env.VITE_PUBLIC_KEY
+      ),
       setSubmission("Your information has been submitted."),
       setName(""),
       setEmail(""),
@@ -23,7 +30,7 @@ function Contact() {
 
   return (
     <>
-      <form className="text-center" onSubmit={handleSubmit}>
+      <form className="text-center mt-40" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block mb-2 mt-8">
             Name
@@ -42,6 +49,7 @@ function Contact() {
           </label>
           <input
             className="w-1/4 text-center px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yinmnBlue"
+            name="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

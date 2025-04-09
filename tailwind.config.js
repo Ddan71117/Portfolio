@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'card-1': "url('./components/cardimg/card1.jpg')",
-        'card-2': "url('./components/cardimg/card2.jpg')",
-        'card-3': "url('./components/cardimg/card3.jpg')",
-        'card-4': "url('./components/cardimg/card4.jpg')",
-        'card-5': "url('./components/cardimg/card5.jpg')",
-        'card-6': "url('./components/cardimg/card6.jpg')",
+        'card-1': "url('/assets/card1.jpg')",
+        'card-2': "url('/assets/card2.jpg')",
+        'card-3': "url('/assets/card3.jpg')",
+        'card-4': "url('/assets/card4.jpg')",
+        'card-5': "url('/assets/card5.jpg')",
+        'card-6': "url('/assets/card6.jpg')",
       },
       colors: {
         yinmnBlue: '#3A506B',
