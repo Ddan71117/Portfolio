@@ -7,7 +7,7 @@ function Portfolio() {
     { title: "Flex-Dice", bgImg: "bg-card-3", url: "https://github.com/Ddan71117/Flex-Dice", deployedUrl: "https://flex-dice.vercel.app" },
     { title: "GitHub Candidate Finder", bgImg: "bg-card-4", url: "https://github.com/Ddan71117/GitHub-Candidate-Finder", deployedUrl: "" },
     { title: "Quote Generator", bgImg: "bg-card-5", url: "https://github.com/Ddan71117/Quote-Generator", deployedUrl: "https://quote-generator-xi-gold.vercel.app/" },
-    { title: "React Portfolio", bgImg: "bg-card-6", url: "https://github.com/Ddan71117/Portfolio", deployedUrl: "" },
+    { title: "React Portfolio", bgImg: "bg-card-6", url: "https://github.com/Ddan71117/Portfolio", deployedUrl: "https://www.danieldrennen.com/" },
   ];
   return (
     <>

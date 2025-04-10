@@ -17,7 +17,7 @@ function Navigation() {
       </li>
       <li className="nav-item">
         <Link
-          to="/Portfolio"
+          to="/portfolio"
           className={`px-3 py-2 text-spaceCadet ${
             currentPage === '/Portfolio' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
           }`}
@@ -28,7 +28,7 @@ function Navigation() {
       
       <li className="nav-item">
         <Link
-          to="/Contact"
+          to="/contact"
           className={`px-3 py-2 text-spaceCadet ${
             currentPage === '/Contact' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
           }`}
@@ -38,7 +38,7 @@ function Navigation() {
       </li>
       <li className="nav-item">
         <Link
-          to="/Resume"
+          to="/resume"
           className={`px-3 py-2 text-spaceCadet ${
             currentPage === '/Resume' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
           }`}
