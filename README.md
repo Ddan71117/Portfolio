@@ -26,7 +26,7 @@ Use the different navigation tabs under the name heading to browse the portfolio
 
 Link for deployed portfolio:
 
-https://6744052ff357efaf57844423--leafy-quokka-87c753.netlify.app/
+https://www.danieldrennen.com/
 
 ## Tests
 
