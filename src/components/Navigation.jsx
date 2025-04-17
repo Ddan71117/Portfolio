@@ -19,7 +19,7 @@ function Navigation() {
         <Link
           to="/portfolio"
           className={`px-3 py-2 text-spaceCadet ${
-            currentPage === '/Portfolio' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
+            currentPage === '/portfolio' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
           }`}
         >
           Portfolio
@@ -30,7 +30,7 @@ function Navigation() {
         <Link
           to="/contact"
           className={`px-3 py-2 text-spaceCadet ${
-            currentPage === '/Contact' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
+            currentPage === '/contact' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
           }`}
         >
           Contact
@@ -40,7 +40,7 @@ function Navigation() {
         <Link
           to="/resume"
           className={`px-3 py-2 text-spaceCadet ${
-            currentPage === '/Resume' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
+            currentPage === '/resume' ? 'font-bold text-xl underline' : 'hover:text-verdegris text-sm transition'
           }`}
         >
           Resume

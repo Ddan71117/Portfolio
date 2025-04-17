@@ -19,6 +19,7 @@ export default {
         oxfordBlue: '#0B132B',
         verdegris: '#5BC0BE',
         spaceCadet: '#1C2541',
+        paleAqua: '#E3FDFD'
       },
       fontFamily: {
         comfortaa: ['Comfortaa', 'sans-serif'],

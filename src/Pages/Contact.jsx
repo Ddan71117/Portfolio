@@ -1,5 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import githubIcon from "/assets/github_icon.png";
+import linkedinIcon from "/assets/linkedin_icon.png";
 
 
 function Contact() {
@@ -8,6 +10,15 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [submission, setSubmission] = useState("");
+  const [hoveredButton, setHoveredButton] = useState(null);
+
+  const handleGHClick = () => {
+    window.open("https://github.com/Ddan71117");
+  }
+
+  const handleLIClick = () => {
+    window.open("https://www.linkedin.com/in/daniel-drennen-910b37350/");
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +47,7 @@ function Contact() {
             Name
             </label>
           <input
-            className="w-1/4 text-center px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yinmnBlue"
+            className="w-1/4 text-center px-4 py-2 border border-verdegris rounded-lg focus:outline-none focus:ring-2 focus:ring-yinmnBlue"
             name="name"
             type="text"
             value={fullName}
@@ -48,7 +59,7 @@ function Contact() {
             Email Address
           </label>
           <input
-            className="w-1/4 text-center px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yinmnBlue"
+            className="w-1/4 text-center px-4 py-2 border border-verdegris rounded-lg focus:outline-none focus:ring-2 focus:ring-yinmnBlue"
             name="email"
             type="email"
             value={email}
@@ -60,7 +71,7 @@ function Contact() {
             Message
           </label>
           <textarea
-            className="w-1/4 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yinmnBlue"
+            className="w-1/4 px-4 py-2 border border-verdegris rounded-lg focus:outline-none focus:ring-2 focus:ring-yinmnBlue"
             name="message"
             type="textarea"
             value={message}
@@ -79,6 +90,24 @@ function Contact() {
           <p className="text-oxfordBlue mt-2 text-center">{submission}</p>
         </div>
       )}
+      <div className="flex justify-center mt-10">
+        <button
+          onClick={handleGHClick}
+          onMouseEnter={() => setHoveredButton('github')}
+          onMouseLeave={() => setHoveredButton(null)}
+          className={`p-5 transform transition-transform duration-300 ${hoveredButton === 'github' ? "scale-110" : "scale-90"}`}
+          >
+          <img src={githubIcon} alt="GitHub" className="w-12 h-12 m-4" />
+        </button>
+        <button
+          onClick={handleLIClick}
+          onMouseEnter={() => setHoveredButton('linkedIn')}
+          onMouseLeave={() => setHoveredButton(null)}
+          className={`p-5 transform transition-transform duration-300 ${hoveredButton === 'linkedIn' ? "scale-110" : "scale-90"}`}
+          >
+          <img src={linkedinIcon} alt="Linked in" className="w-12 h-12 m-4" />
+        </button>
+      </div>
     </>
   )
 }

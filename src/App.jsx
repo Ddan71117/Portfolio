@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-    <main className='bg-verdegris min-h-screen'>
+    <main className='bg-paleAqua min-h-screen'>
       <Header />
       <div className="mx-3">
         <Outlet />
