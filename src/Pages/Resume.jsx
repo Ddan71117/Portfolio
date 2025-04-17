@@ -1,4 +1,4 @@
-import resume from '..\assets\resume.pdf';
+import resume from '../assets/myResume.pdf';
 import React from 'react'
 
 function Resume() {
